@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="icon" type="icon" href="./image/code.png">
+    <link rel="stylesheet" href="./todoList.css">
+    <script src="https://kit.fontawesome.com/771729e978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="side-bar">
+        <div class="header-cover">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <ul class="menu-bar">
+            <li class="menu-item">
+                <i class="fa-regular fa-star"></i>
+                <a href="#">Favorite</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa-regular fa-calendar-days"></i>
+                <a href="#">Plan</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa-solid fa-user-group"></i>
+                <a href="#">Group</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa-regular fa-folder-open"></i>
+                <a href="#">Folder</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa-solid fa-wifi"></i>
+                <a href="#">Conection</a>
+            </li>
+            <li class="menu-item active">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </div>
+    <!-- main side -->
+    <div class="main-side">
+        <div class="navigation-bar">
+            <div class="left-navbar">
+                <i class="fa-solid fa-house"></i>
+                <span class="home">Home</span>
+            </div>
+            <div class="right-navbar">
+                <i class="fa-solid fa-bell"></i>
+                <div class="mode-screen">
+                    <span class="circle"></span>
+                    <span class="moon"></span>
+                </div>
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="control-panel">
+            <div class="title-todo-list">
+                Add New Task
+            </div>
+            <div class="todo-container">
+                <div class="add-todo">
+                    <button class="add">+</button>
+                    <input type="text" placeholder="add todo..." class="addInput">
+                </div>
+                <div class="search-input">
+                    <label for="name"><nobr>Search Todo:</nobr></label>
+                    <input type="search" id="name" placeholder="search..." class="searchInput">
+                </div>
+            </div>
+        </div>
+        <div class="todo-lists">
+            <!-- <div class="todo-item">
+                <div class="content-todo">
+                    <input type="checkbox" class="check" checked>
+                    <span class="todo">Bootstrap</span>
+                </div>
+                <i class="fa-solid fa-xmark"></i>
+            </div> -->
+        </div>
+    </div>
+
+<script src="./todoList.js"></script>
+</body>
+</html>
